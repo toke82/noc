@@ -37,7 +37,7 @@ export enum LogSeverityLevel {
       const log = new LogEntity({ 
         message,
         level,
-        createdAt,
+        createdAt: new Date(createdAt),
         origin,
       });
   
